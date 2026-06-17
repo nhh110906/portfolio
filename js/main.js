@@ -63,6 +63,3 @@ function updateActiveNav() {
 
 window.addEventListener('scroll', updateActiveNav);
 updateActiveNav();
-
-// Footer year
-document.getElementById('year').textContent = new Date().getFullYear();
