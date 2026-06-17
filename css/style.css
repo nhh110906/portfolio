@@ -827,18 +827,21 @@ img, svg {
 
 .footer-inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
+  text-align: center;
 }
 
-.footer-inner p {
+.footer-credit {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  font-weight: bold;
+  text-align: center;
+  color: var(--heading);
 }
 
-.footer-inner strong {
+.footer-credit strong {
   color: var(--heading);
 }
 
