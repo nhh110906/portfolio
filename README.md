@@ -1,25 +1,25 @@
-# Nguyễn Huy Hoàng - IT Portfolio
+# Nguyễn Huy Hoàng — Portfolio
 
-Portfolio cá nhân chuyên nghiệp cho vị trí Fresher Design / Frontend Developer.
+Portfolio cá nhân thiết kế theo phong cách [mattfarley.ca](https://mattfarley.ca/) — giao diện sáng, tối giản, tập trung vào dự án và kỹ năng.
 
-## Cấu trúc
+## Live site
 
-- **Hero** — Giới thiệu, thống kê nổi bật
-- **Giới thiệu** — Mục tiêu nghề nghiệp, thông tin cá nhân
-- **Kỹ năng** — Soft skills, ngôn ngữ lập trình, framework, database
-- **Kinh nghiệm** — Timeline công việc & hoạt động
-- **Dự án** — 3 dự án nổi bật với tech stack
-- **Học vấn** — Đại học Thủy Lợi, chứng chỉ, giải thưởng
-- **Liên hệ** — Email, điện thoại, form liên hệ
+**https://nhh110906.github.io/portfolio/**
 
-## Chạy local
+## Local development
 
-Mở trực tiếp `index.html` trong trình duyệt, hoặc:
+Mở `index.html` trực tiếp trong trình duyệt, hoặc dùng local server:
 
 ```bash
 npx serve .
 ```
 
+## Cấu trúc
+
+- `index.html` — Trang chính (Hero, Dự án, Giới thiệu, Kỹ năng, Kinh nghiệm, Học vấn, Liên hệ)
+- `css/style.css` — Stylesheet
+- `js/main.js` — Navigation, scroll reveal, mobile menu
+
 ## Deploy
 
-Static site — deploy lên GitHub Pages, Netlify, hoặc Vercel.
+Push lên nhánh `main` — GitHub Pages tự động build tại `https://nhh110906.github.io/portfolio/`.

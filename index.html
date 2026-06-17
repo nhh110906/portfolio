@@ -3,402 +3,321 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nguyễn Huy Hoàng - Fresher Design & Frontend Developer Portfolio" />
-  <title>Nguyễn Huy Hoàng | IT Portfolio</title>
+  <meta name="description" content="Nguyễn Huy Hoàng — Fresher Design & Frontend Developer. Portfolio cá nhân." />
+  <title>Nguyễn Huy Hoàng | Design & Frontend Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>" />
 </head>
 <body>
-  <nav class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#hero" class="nav-logo">NH<span>H</span></a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Trang chủ">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#5E6AD2"/>
+          <path d="M8 22L16 10L24 22H8Z" fill="white" opacity="0.9"/>
+        </svg>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
+        <li><a href="#work">Dự án</a></li>
         <li><a href="#about">Giới thiệu</a></li>
         <li><a href="#skills">Kỹ năng</a></li>
         <li><a href="#experience">Kinh nghiệm</a></li>
-        <li><a href="#projects">Dự án</a></li>
-        <li><a href="#education">Học vấn</a></li>
-        <li><a href="#contact" class="nav-cta">Liên hệ</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
       </ul>
     </div>
   </nav>
 
   <header class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="container hero-content">
-      <p class="hero-greeting">Xin chào, tôi là</p>
-      <h1 class="hero-name">Nguyễn Huy Hoàng</h1>
-      <p class="hero-title">
-        <span class="typed-text" id="typedText"></span>
-        <span class="cursor">|</span>
-      </p>
-      <p class="hero-summary">
-        Sinh viên Hệ thống thông tin tại Đại học Thủy Lợi, đam mê thiết kế giao diện và phát triển web.
-        Mục tiêu trở thành intern Design, tham gia nhiều dự án thực tế của công ty.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">Xem dự án</a>
-        <a href="#contact" class="btn btn-outline">Liên hệ</a>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Fresher Design & Frontend Developer</p>
+        <h1>Tôi thiết kế và code những sản phẩm web đơn giản, đẹp mắt.</h1>
+        <p class="hero-sub">
+          Sinh viên Hệ thống thông tin tại Đại học Thủy Lợi — đam mê UI/UX và phát triển web.
+          Mục tiêu trở thành intern Design, tham gia nhiều dự án thực tế.
+        </p>
+        <a href="#contact" class="btn btn-primary">Bắt đầu trò chuyện</a>
       </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-value">3+</span>
-          <span class="stat-label">Dự án</span>
-        </div>
-        <div class="stat">
-          <span class="stat-value">GPA 3.2</span>
-          <span class="stat-label">Học tập</span>
-        </div>
-        <div class="stat">
-          <span class="stat-value">IELTS 6.5</span>
-          <span class="stat-label">Tiếng Anh</span>
-        </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg class="hero-illustration" viewBox="0 0 400 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="200" cy="180" r="140" fill="#F3F8FF"/>
+          <rect x="120" y="100" width="160" height="120" rx="12" fill="#5E6AD2" opacity="0.15"/>
+          <rect x="130" y="110" width="140" height="90" rx="8" fill="white" stroke="#5E6AD2" stroke-width="2"/>
+          <rect x="145" y="125" width="60" height="8" rx="4" fill="#5E6AD2" opacity="0.6"/>
+          <rect x="145" y="142" width="110" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="145" y="155" width="90" height="6" rx="3" fill="#E2E8F0"/>
+          <rect x="145" y="168" width="70" height="6" rx="3" fill="#E2E8F0"/>
+          <circle cx="310" cy="80" r="24" fill="#FFF5F6"/>
+          <circle cx="90" cy="260" r="32" fill="#F0FFF4"/>
+          <circle cx="320" cy="280" r="18" fill="#FFFAF0"/>
+          <path d="M80 140L100 120L120 150L95 160Z" fill="#5E6AD2" opacity="0.3"/>
+        </svg>
       </div>
     </div>
-    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
-      <span></span>
-    </a>
   </header>
 
   <main>
-    <section class="section about" id="about">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">01</span>
-          <h2>Giới thiệu</h2>
-        </div>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>
-              Tôi là sinh viên năm 2 ngành Hệ thống thông tin kết hợp Ngôn ngữ Trung Quốc tại
-              <strong>Đại học Thủy Lợi</strong>. Với nền tảng lập trình vững chắc và khả năng thiết kế UI/UX,
-              tôi mong muốn trở thành intern Design và đóng góp vào các dự án sáng tạo của doanh nghiệp.
-            </p>
-            <p>
-              Ngoài kỹ năng kỹ thuật, tôi còn có kinh nghiệm làm việc nhóm, thuyết trình và tư vấn.
-              Tôi luôn tìm hiểu công nghệ mới, đặc biệt là AI hỗ trợ phát triển phần mềm.
-            </p>
-            <div class="about-info">
-              <div class="info-item">
-                <span class="info-label">Sinh nhật</span>
-                <span>11/09/2006</span>
-              </div>
-              <div class="info-item">
-                <span class="info-label">Địa chỉ</span>
-                <span>7/48 Thái Hà, Hà Nội</span>
-              </div>
-              <div class="info-item">
-                <span class="info-label">Sở thích</span>
-                <span>Cầu lông, chơi game, nấu ăn, phượt, học ngôn ngữ</span>
-              </div>
-            </div>
+  <section class="section work" id="work">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Dự án gần đây</h2>
+        <p>Đây là một vài dự án tôi đã tham gia. Muốn biết thêm? <a href="mailto:huang.id.vn@gmail.com">Gửi email cho tôi</a>.</p>
+      </div>
+      <div class="work-grid">
+        <article class="work-card work-card--blue">
+          <div class="work-card-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="white" fill-opacity="0.5"/><path d="M12 28V16L20 12L28 16V28L20 32L12 28Z" stroke="currentColor" stroke-width="2"/></svg>
           </div>
-          <div class="about-cards">
-            <div class="highlight-card">
-              <div class="card-icon">🎯</div>
-              <h3>Mục tiêu nghề nghiệp</h3>
-              <p>Trở thành intern Design, tham gia vào nhiều dự án của công ty</p>
-            </div>
-            <div class="highlight-card">
-              <div class="card-icon">🏆</div>
-              <h3>Thành tích</h3>
-              <p>Giải khuyến khích & Giải ba NCKH sinh viên TLU (2025–2026)</p>
-            </div>
-            <div class="highlight-card">
-              <div class="card-icon">🌐</div>
-              <h3>Ngoại ngữ</h3>
-              <p>IELTS 6.5 · HSK 4</p>
-            </div>
+          <h3>Web bán hàng & Xác thực hàng hóa</h3>
+          <p>Nền tảng mua sắm tối giản với chức năng xác thực hàng chính hãng tự động — lấy cảm hứng từ Shopee nhưng gọn gàng hơn.</p>
+          <div class="work-tags">
+            <span>ASP.NET Core</span><span>Next.js</span><span>MongoDB</span>
+          </div>
+          <p class="work-meta">NCKH · 5 thành viên · UI/BE</p>
+        </article>
+
+        <article class="work-card work-card--pink">
+          <div class="work-card-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="white" fill-opacity="0.5"/><rect x="10" y="14" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M14 14V11C14 9.9 14.9 9 16 9H24C25.1 9 26 9.9 26 11V14" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Web quản lý ký túc thông minh</h3>
+          <p>Quản lý sinh viên, thu tiền, quét khuôn mặt vào/ra và phân cấp — hỗ trợ quản lý ký túc xá hiệu quả hơn.</p>
+          <div class="work-tags">
+            <span>Next.js</span><span>MySQL</span>
+          </div>
+          <p class="work-meta">NCKH · 4 thành viên · UI/BE</p>
+        </article>
+
+        <article class="work-card work-card--green">
+          <div class="work-card-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="white" fill-opacity="0.5"/><circle cx="20" cy="20" r="8" stroke="currentColor" stroke-width="2"/><path d="M20 12V10M20 30V28M12 20H10M30 20H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Game NRO</h3>
+          <p>Game 2D lấy cảm hứng từ 7 viên ngọc rồng — nhiều sự kiện, items và cơ chế gameplay độc đáo.</p>
+          <div class="work-tags">
+            <span>Java Core</span><span>MySQL</span>
+          </div>
+          <p class="work-meta">Bài tập lớn · Cá nhân</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-intro">
+        <h2>Xin chào, tôi là Hoàng.</h2>
+        <p class="about-lead">
+          Sinh viên năm 2 ngành Hệ thống thông tin kết hợp Ngôn ngữ Trung Quốc tại
+          <strong>Đại học Thủy Lợi</strong> (GPA 3.2). Tôi có nền tảng lập trình vững,
+          khả năng thiết kế giao diện và kinh nghiệm làm việc nhóm qua nhiều dự án NCKH.
+          Luôn tò mò với công nghệ mới, đặc biệt AI hỗ trợ phát triển phần mềm.
+        </p>
+      </div>
+
+      <div class="about-cards">
+        <article class="about-card">
+          <div class="about-card-icon about-card-icon--design">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
+          </div>
+          <h3>Designer</h3>
+          <p>Tôi coi trọng cấu trúc nội dung đơn giản, layout sạch và tương tác có chủ đích.</p>
+          <p class="about-card-label">Thích thiết kế:</p>
+          <p class="about-card-list">UI, Web, App, Wireframe</p>
+          <p class="about-card-label">Công cụ:</p>
+          <p class="about-card-list">Figma, Canva, Photoshop</p>
+        </article>
+
+        <article class="about-card">
+          <div class="about-card-icon about-card-icon--dev">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Frontend Developer</h3>
+          <p>Thích code từ đầu và biến ý tưởng thành sản phẩm trên trình duyệt.</p>
+          <p class="about-card-label">Ngôn ngữ:</p>
+          <p class="about-card-list">HTML, CSS, JavaScript, C#, Python, Java</p>
+          <p class="about-card-label">Công cụ:</p>
+          <p class="about-card-list">React, Next.js, ASP.NET Core, Git, VS Code</p>
+        </article>
+
+        <article class="about-card">
+          <div class="about-card-icon about-card-icon--team">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Team Player</h3>
+          <p>Ủy viên Ban Chấp hành Liên chi đoàn khoa CNTT — quản lý hoạt động và trao đổi kiến thức.</p>
+          <p class="about-card-label">Kỹ năng mềm:</p>
+          <p class="about-card-list">Giao tiếp, thuyết trình, đàm phán, BA</p>
+          <p class="about-card-label">Ngoại ngữ:</p>
+          <p class="about-card-list">IELTS 6.5 · HSK 4</p>
+        </article>
+      </div>
+
+      <div class="about-details">
+        <div class="detail-item">
+          <span class="detail-label">Sinh nhật</span>
+          <span>11/09/2006</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Địa chỉ</span>
+          <span>7/48 Thái Hà, Hà Nội</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label">Sở thích</span>
+          <span>Cầu lông, game, nấu ăn, phượt, học ngôn ngữ</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-intro section-intro--center">
+        <h2>Công nghệ & Kỹ năng</h2>
+        <p>Bộ công cụ tôi sử dụng trong các dự án học tập và nghiên cứu.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-block">
+          <h3>Ngôn ngữ lập trình</h3>
+          <ul class="skill-list">
+            <li>C / C++</li>
+            <li>C#</li>
+            <li>Python</li>
+            <li>HTML / CSS / JS</li>
+            <li>Java</li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h3>Framework & Database</h3>
+          <ul class="skill-list">
+            <li>React</li>
+            <li>ASP.NET Core</li>
+            <li>Next.js</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h3>Công cụ & Khác</h3>
+          <ul class="skill-list">
+            <li>Git</li>
+            <li>Figma · Canva</li>
+            <li>draw.io · StarUML</li>
+            <li>AI (Cursor, Claude)</li>
+            <li>PlantUML</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-intro">
+        <h2>Kinh nghiệm</h2>
+        <p>Hành trình học tập và làm việc của tôi.</p>
+      </div>
+      <div class="exp-list">
+        <article class="exp-item">
+          <div class="exp-date">2025 – 2026</div>
+          <div class="exp-body">
+            <h3>Frontend Developer</h3>
+            <p class="exp-org">IS Lab TLU</p>
+            <ul>
+              <li>Phát triển trang web thân thiện với người dùng</li>
+              <li>Tăng lưu lượng truy cập, lượt xem và cải thiện UX</li>
+            </ul>
+          </div>
+        </article>
+        <article class="exp-item">
+          <div class="exp-date">2025 – 2026</div>
+          <div class="exp-body">
+            <h3>Chuyên viên tư vấn</h3>
+            <p class="exp-org">Trường Anh ngữ Quốc tế ECORP</p>
+            <ul>
+              <li>Tư vấn sinh viên có nhu cầu học tiếng Anh</li>
+              <li>Dẫn đội hoàn thành mục tiêu</li>
+            </ul>
+          </div>
+        </article>
+        <article class="exp-item">
+          <div class="exp-date">2024 – 2027</div>
+          <div class="exp-body">
+            <h3>Ủy viên Ban Chấp hành Liên chi đoàn</h3>
+            <p class="exp-org">Liên chi đoàn khoa CNTT</p>
+            <ul>
+              <li>Trao đổi kiến thức chuyên ngành</li>
+              <li>Quản lý sinh viên và hoạt động khoa, ngành</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-intro section-intro--center">
+        <h2>Học vấn & Thành tích</h2>
+      </div>
+      <div class="edu-grid">
+        <article class="edu-main">
+          <span class="edu-badge">🎓</span>
+          <div>
+            <span class="edu-date">2024 – 2028</span>
+            <h3>Đại học Thủy Lợi</h3>
+            <p>Hệ thống thông tin | Ngôn ngữ Trung Quốc</p>
+            <p class="edu-note">Sinh viên năm 2 · GPA 3.2</p>
+          </div>
+        </article>
+        <div class="awards-grid">
+          <div class="award-card">
+            <span class="award-icon">EN</span>
+            <div><strong>IELTS</strong><p>Band 6.5</p></div>
+          </div>
+          <div class="award-card">
+            <span class="award-icon">中</span>
+            <div><strong>HSK</strong><p>Cấp độ 4</p></div>
+          </div>
+          <div class="award-card">
+            <span class="award-icon">🏅</span>
+            <div><strong>Giải khuyến khích NCKH SV</strong><p>TLU 2025</p></div>
+          </div>
+          <div class="award-card">
+            <span class="award-icon">🥉</span>
+            <div><strong>Giải ba NCKH SV</strong><p>TLU 2026</p></div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section skills" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">02</span>
-          <h2>Kỹ năng</h2>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Soft Skills</h3>
-            <div class="skill-tags">
-              <span class="tag">Giao tiếp</span>
-              <span class="tag">Đàm phán</span>
-              <span class="tag">Thuyết trình</span>
-              <span class="tag">Làm việc nhóm</span>
-              <span class="tag">Business Analysis</span>
-              <span class="tag">Sử dụng AI (Cursor, Claude)</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Ngôn ngữ lập trình</h3>
-            <div class="skill-tags">
-              <span class="tag tech">C/C++</span>
-              <span class="tag tech">C#</span>
-              <span class="tag tech">Python</span>
-              <span class="tag tech">HTML/CSS/JS</span>
-              <span class="tag tech">Java</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Framework & Công cụ</h3>
-            <div class="skill-tags">
-              <span class="tag tech">React</span>
-              <span class="tag tech">ASP.NET Core</span>
-              <span class="tag tech">Next.js</span>
-              <span class="tag tech">Git</span>
-              <span class="tag tech">Figma</span>
-              <span class="tag tech">Canva</span>
-              <span class="tag tech">Photoshop</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Database & Diagram</h3>
-            <div class="skill-tags">
-              <span class="tag tech">MySQL</span>
-              <span class="tag tech">MongoDB</span>
-              <span class="tag tech">draw.io</span>
-              <span class="tag tech">StarUML</span>
-              <span class="tag tech">PlantUML</span>
-            </div>
-          </div>
-        </div>
+  <section class="section contact" id="contact">
+    <div class="container contact-inner">
+      <h2>Quan tâm đến hợp tác?</h2>
+      <p>Tôi luôn sẵn sàng thảo luận về cơ hội intern Design, Frontend Developer hoặc dự án mới.</p>
+      <a href="mailto:huang.id.vn@gmail.com" class="btn btn-primary btn-lg">Bắt đầu trò chuyện</a>
+      <div class="contact-info">
+        <a href="mailto:huang.id.vn@gmail.com">huang.id.vn@gmail.com</a>
+        <span class="contact-dot">·</span>
+        <a href="tel:0789337048">0789 337 048</a>
+        <span class="contact-dot">·</span>
+        <span>7/48 Thái Hà, Hà Nội</span>
       </div>
-    </section>
-
-    <section class="section experience" id="experience">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">03</span>
-          <h2>Kinh nghiệm làm việc</h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">2025 – 2026</span>
-              <h3>Frontend Developer</h3>
-              <p class="timeline-org">IS Lab TLU</p>
-              <ul>
-                <li>Phát triển trang web thân thiện với người dùng</li>
-                <li>Tăng lưu lượng truy cập, lượt xem trang và cải thiện trải nghiệm người dùng</li>
-              </ul>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">2025 – 2026</span>
-              <h3>Chuyên viên tư vấn</h3>
-              <p class="timeline-org">Trường Anh ngữ Quốc tế ECORP</p>
-              <ul>
-                <li>Tư vấn hỗ trợ sinh viên có nhu cầu học tiếng Anh</li>
-                <li>Dẫn đội hoàn thành mục tiêu</li>
-              </ul>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <span class="timeline-date">2024 – 2027</span>
-              <h3>Ủy viên Ban Chấp hành Liên chi đoàn</h3>
-              <p class="timeline-org">Liên chi đoàn khoa CNTT</p>
-              <ul>
-                <li>Tham gia trao đổi kiến thức chuyên ngành</li>
-                <li>Quản lý sinh viên và các hoạt động của khoa, ngành</li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section projects" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">04</span>
-          <h2>Dự án</h2>
-        </div>
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-header">
-              <span class="project-type">Nghiên cứu khoa học</span>
-              <span class="project-team">5 thành viên</span>
-            </div>
-            <h3>Web bán hàng & Xác thực hàng hóa tự động</h3>
-            <p>
-              Nền tảng mua sắm trực tuyến tối giản, tiện lợi hơn Shopee với chức năng
-              xác thực hàng hóa chính hãng tự động.
-            </p>
-            <div class="project-tech">
-              <span>ASP.NET Core</span>
-              <span>Next.js</span>
-              <span>MongoDB</span>
-            </div>
-            <p class="project-role"><strong>Vai trò:</strong> Vẽ Figma giao diện, code Backend</p>
-          </article>
-
-          <article class="project-card featured">
-            <div class="project-header">
-              <span class="project-type">Nghiên cứu khoa học</span>
-              <span class="project-team">4 thành viên</span>
-            </div>
-            <h3>Web quản lý ký túc thông minh</h3>
-            <p>
-              Hệ thống hỗ trợ quản lý sinh viên, thu tiền, quét khuôn mặt vào/ra,
-              phân cấp sinh viên — giúp quản lý ký túc xá hiệu quả hơn.
-            </p>
-            <div class="project-tech">
-              <span>Next.js</span>
-              <span>MySQL</span>
-            </div>
-            <p class="project-role"><strong>Vai trò:</strong> Vẽ Figma giao diện, code Backend</p>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-              <span class="project-type">Bài tập lớn</span>
-              <span class="project-team">Cá nhân</span>
-            </div>
-            <h3>Game NRO</h3>
-            <p>
-              Game 2D lấy cảm hứng từ bộ truyện 7 viên ngọc rồng, với nhiều sự kiện,
-              items và cơ chế gameplay độc đáo so với NRO Teamobi.
-            </p>
-            <div class="project-tech">
-              <span>Java Core</span>
-              <span>MySQL</span>
-            </div>
-            <p class="project-role"><strong>Vai trò:</strong> Code lại source, dựng game</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section education" id="education">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">05</span>
-          <h2>Học vấn & Chứng chỉ</h2>
-        </div>
-        <div class="edu-grid">
-          <div class="edu-card main-edu">
-            <div class="edu-icon">🎓</div>
-            <div>
-              <span class="edu-date">2024 – 2028</span>
-              <h3>Đại học Thủy Lợi</h3>
-              <p class="edu-degree">Hệ thống thông tin | Ngôn ngữ Trung Quốc</p>
-              <ul class="edu-details">
-                <li>Sinh viên năm 2</li>
-                <li>GPA: 3.2</li>
-              </ul>
-            </div>
-          </div>
-          <div class="cert-grid">
-            <div class="cert-card">
-              <span class="cert-badge">EN</span>
-              <div>
-                <h4>IELTS</h4>
-                <p>Band 6.5</p>
-              </div>
-            </div>
-            <div class="cert-card">
-              <span class="cert-badge">中</span>
-              <div>
-                <h4>HSK</h4>
-                <p>Cấp độ 4</p>
-              </div>
-            </div>
-            <div class="cert-card award">
-              <span class="cert-badge">🏅</span>
-              <div>
-                <h4>Giải khuyến khích NCKH SV</h4>
-                <p>TLU 2025</p>
-              </div>
-            </div>
-            <div class="cert-card award">
-              <span class="cert-badge">🥉</span>
-              <div>
-                <h4>Giải ba NCKH SV</h4>
-                <p>TLU 2026</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">06</span>
-          <h2>Liên hệ</h2>
-        </div>
-        <div class="contact-wrapper">
-          <div class="contact-info">
-            <h3>Hãy kết nối với tôi!</h3>
-            <p>
-              Tôi luôn sẵn sàng cho các cơ hội intern Design, Frontend Developer
-              hoặc hợp tác dự án. Đừng ngần ngại liên hệ!
-            </p>
-            <div class="contact-links">
-              <a href="mailto:huang.id.vn@gmail.com" class="contact-item">
-                <span class="contact-icon">✉️</span>
-                <div>
-                  <span class="contact-label">Email</span>
-                  <span>huang.id.vn@gmail.com</span>
-                </div>
-              </a>
-              <a href="tel:0789337048" class="contact-item">
-                <span class="contact-icon">📱</span>
-                <div>
-                  <span class="contact-label">Điện thoại</span>
-                  <span>0789 337 048</span>
-                </div>
-              </a>
-              <div class="contact-item">
-                <span class="contact-icon">📍</span>
-                <div>
-                  <span class="contact-label">Địa chỉ</span>
-                  <span>7/48 Thái Hà, Hà Nội</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <label for="name">Họ tên</label>
-              <input type="text" id="name" name="name" placeholder="Nhập họ tên" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="email@example.com" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Tin nhắn</label>
-              <textarea id="message" name="message" rows="4" placeholder="Nội dung tin nhắn..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">Gửi tin nhắn</button>
-          </form>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-content">
-      <p>&copy; <span id="year"></span> Nguyễn Huy Hoàng. Portfolio IT Professional.</p>
-      <p class="footer-updated">Cập nhật lần cuối: <span id="lastUpdated"></span></p>
+    <div class="container footer-inner">
+      <p>Thiết kế & code bởi <strong>Nguyễn Huy Hoàng</strong></p>
+      <p class="footer-copy">&copy; <span id="year"></span> — Portfolio cá nhân</p>
     </div>
   </footer>
 
