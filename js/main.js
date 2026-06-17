@@ -1,6 +1,26 @@
 const nav = document.getElementById('nav');
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
+const hero = document.getElementById('hero');
+const backToTop = document.getElementById('backToTop');
+const navLogo = document.querySelector('.nav-logo');
+
+// Hide hero after back-to-top reload
+if (sessionStorage.getItem('skipHero') === 'true') {
+  hero.classList.add('is-hidden');
+  navLogo.setAttribute('href', '#work');
+  requestAnimationFrame(() => {
+    const work = document.getElementById('work');
+    if (work) {
+      window.scrollTo({ top: work.offsetTop - nav.offsetHeight, behavior: 'instant' });
+    }
+  });
+}
+
+backToTop.addEventListener('click', () => {
+  sessionStorage.setItem('skipHero', 'true');
+  location.reload();
+});
 
 // Navbar scroll state
 window.addEventListener('scroll', () => {
