@@ -35,7 +35,7 @@ const revealObserver = new IntersectionObserver(
 );
 
 document.querySelectorAll(
-  '.work-card, .about-card, .hobby-card, .skill-block, .exp-item, .edu-main, .award-card, .section-intro, .about-intro, .contact-inner'
+  '.work-card, .about-card, .hobby-card, .soft-skills, .skill-block, .exp-item, .edu-main, .award-card, .section-intro, .about-intro, .contact-inner'
 ).forEach((el, i) => {
   el.classList.add('reveal');
   el.style.transitionDelay = `${(i % 4) * 0.08}s`;
